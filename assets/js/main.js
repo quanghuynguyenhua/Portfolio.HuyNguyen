@@ -5,7 +5,7 @@
 */
 
 (function($) {
-
+		
 	// Settings.
 		var settings = {
 
@@ -88,7 +88,7 @@
 		$window.on('load', function() {
 			window.setTimeout(function() {
 				$body.removeClass('is-preload');
-			}, 100);
+			}, 600);
 		});
 
 	// Tweaks/fixes.
@@ -235,7 +235,7 @@
 	// Scroll wheel.
 		if (settings.scrollWheel.enabled)
 			(function() {
-
+				
 				// Based on code by @miorel + @pieterv of Facebook (thanks guys :)
 				// github.com/facebook/fixed-data-table/blob/master/src/vendor_upstream/dom/normalizeWheel.js
 					var normalizeWheel = function(event) {
@@ -756,4 +756,8 @@
 
 					});
 
+					gsap.to('.test-element', { duration: 2, x: 100 });
+
+
 })(jQuery);
+
